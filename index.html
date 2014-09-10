@@ -12,12 +12,23 @@
   <body>
     <div class="row">
       <div class="large-12 columns">
-        <a href="#" class="button small" data-slideover="toggle">Trigger Slideover</a>
-        <a href="#" class="button small" data-slideover="toggle">Trigger Slideover</a>
+        <h3>Slide Over demo</h3>
       </div>
     </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <a href="#slideover1" class="button small" data-slideover="open">Trigger Slideover</a>
+        <a href="#slideover2" class="button small" data-slideover="open">Trigger Slideover</a>
+      </div>
+      <div id="slideover1" class="slideover-content">
+        <p>Hi</p>
+      </div>
+      <div id="slideover2" class="slideover-content">
+        <p>Bye</p>
+      </div>
+    <script>
+      $('*[data-slideover="open"]').slideOver();
+    </script>
+    </div>
   </body>
-  <script>
-    $('*[data-slideover="toggle"]').slideOver();
-  </script>
 </html>
