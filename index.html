@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.slide-over.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <script type="text/javascript" src="js/vendor/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/vendor/modernizr.js"></script>
     <script type="text/jacascript" src="js/vendor/fastclick.js"></script>
@@ -21,13 +22,25 @@
         <a href="#slideover2" class="button small" data-slideover="open">Trigger Slideover</a>
       </div>
       <div id="slideover1" class="slideover-content">
-        <p>Hi</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam auctor est ac viverra. Pellentesque non fermentum sapien. In tincidunt nunc nisl, a rhoncus orci pellentesque nec. Phasellus vel odio tristique, pellentesque nunc in, lacinia velit. Proin sit amet vulputate nisl. Mauris eget euismod ipsum. Suspendisse vel ultricies turpis. Aenean nec tortor sed massa vestibulum aliquet. Ut eu viverra purus, quis tincidunt leo. Fusce fermentum laoreet enim, eu tincidunt magna tempus ac. Maecenas rhoncus sit amet augue eget gravida. Proin dapibus ligula purus, sed aliquam est imperdiet nec. Quisque metus lorem, consequat at ipsum vitae, scelerisque pretium metus.</p>
+        <p>Nam tristique ligula condimentum molestie consectetur. Aliquam ultrices turpis justo, sit amet ultrices magna tincidunt at. Phasellus ut nibh pellentesque, egestas diam at, bibendum ex. Donec sodales bibendum efficitur. Donec venenatis viverra mauris, id consequat massa porta id. Sed aliquam hendrerit tellus ut feugiat. Proin in tortor tincidunt, venenatis eros et, venenatis ipsum. Cras vel ligula nec lectus fermentum viverra vitae eu ante. Phasellus sagittis vehicula eros, eu molestie lorem posuere sed.</p>
+        <img alt="test-img-skydiving" class="test-images" src="http://3.bp.blogspot.com/-heFNMjOFgBw/Tz19jLZXfMI/AAAAAAAAAsQ/mCFbupgNzqU/s1600/canopy.gif"/>
+        <p>Suspendisse luctus, quam scelerisque luctus lacinia, nulla nulla ornare justo, sit amet dignissim est eros sit amet urna. Proin gravida diam id tristique blandit. Nulla eleifend neque et urna rhoncus dapibus. Maecenas sed auctor diam. Curabitur bibendum nibh vitae nisi condimentum ornare. Phasellus id nisl auctor, fermentum eros sed, rutrum magna. Vivamus id leo aliquam, pulvinar justo ut, accumsan risus. Phasellus fermentum, nisl eget auctor rhoncus, nibh tortor pulvinar arcu, non interdum orci enim nec tellus. Quisque nec justo urna. Cras in pulvinar tortor. Sed congue diam sed lorem accumsan, vel viverra ipsum lacinia. Quisque rhoncus mattis velit, eget volutpat turpis semper at. Curabitur vehicula elementum mi, nec sodales mauris lacinia in.</p>
       </div>
       <div id="slideover2" class="slideover-content">
-        <p>Bye</p>
+        <p>Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo. Sococo jumo zynga wufoo voxy ning geni wufoo, jiglu lanyrd yoono mozy mzinga kosmix zillow, jabber sclipo chumby ngmoco dogster zlio spotify. Koofers ebay kaboodle jumo dogster cotweet, hojoki jumo zimbra sifteo doostang, klout unigo cotweet elgg. Shopify wakoopa chegg palantir ideeli oooooc qeyno yoono handango divvyshot zlio, bitly zillow mozy meevee mzinga chumby tivo zoosk akismet, zanga cotweet spock imeem chegg squidoo voki jibjab sclipo. Foodzie groupon imvu mobly joyent zinch lanyrd gsnap, heroku whrrl spotify hulu imeem klout edmodo, kippt elgg yuntaa jibjab mzinga twitter.</p>
+        <img alt="test-img-fish" class="test-images" src="http://www.ageofaquariums.biz/wp-content/uploads/2011/11/Tropical-Fish-31.jpg"/>
+        <p>Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo. Sococo jumo zynga wufoo voxy ning geni wufoo, jiglu lanyrd yoono mozy mzinga kosmix zillow, jabber sclipo chumby ngmoco dogster zlio spotify. Koofers ebay kaboodle jumo dogster cotweet, hojoki jumo zimbra sifteo doostang, klout unigo cotweet elgg. Shopify wakoopa chegg palantir ideeli oooooc qeyno yoono handango divvyshot zlio, bitly zillow mozy meevee mzinga chumby tivo zoosk akismet, zanga cotweet spock imeem chegg squidoo voki jibjab sclipo. Foodzie groupon imvu mobly joyent zinch lanyrd gsnap, heroku whrrl spotify hulu imeem klout edmodo, kippt elgg yuntaa jibjab mzinga twitter.</p>
+        <p>Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo. Sococo jumo zynga wufoo voxy ning geni wufoo, jiglu lanyrd yoono mozy mzinga kosmix zillow, jabber sclipo chumby ngmoco dogster zlio spotify. Koofers ebay kaboodle jumo dogster cotweet, hojoki jumo zimbra sifteo doostang, klout unigo cotweet elgg. Shopify wakoopa chegg palantir ideeli oooooc qeyno yoono handango divvyshot zlio, bitly zillow mozy meevee mzinga chumby tivo zoosk akismet, zanga cotweet spock imeem chegg squidoo voki jibjab sclipo. Foodzie groupon imvu mobly joyent zinch lanyrd gsnap, heroku whrrl spotify hulu imeem klout edmodo, kippt elgg yuntaa jibjab mzinga twitter.</p>
       </div>
     <script>
-      $('*[data-slideover="open"]').slideOver();
+      $('*[data-slideover="open"]').slideOver({
+        orientation: 'right',
+        animationSpeed: 300,
+        overlayColor: 'rgba(18,19,20,0.9)'
+        //onOpen: function() {alert('opened!')},
+        //onClose: function() {alert('closed!')}
+      });
     </script>
     </div>
   </body>
